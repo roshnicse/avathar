@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cld-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#0759C7" />
+    </linearGradient>
+    <linearGradient id="dvo-loop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="50%" stop-color="#7B2CBF" />
+      <stop offset="100%" stop-color="#F5C451" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="14" fill="#040c1d" />
+
+  <!-- Cloud Shape Outline -->
+  <path d="M120 115 C100 115 85 130 85 150 C85 170 100 185 120 185 L280 185 C305 185 325 165 325 140 C325 118 310 100 290 96 C285 70 260 50 230 50 C205 50 185 65 178 85 C170 80 160 78 150 78 C130 78 115 95 120 115 Z" 
+        fill="#07152F" stroke="url(#cld-grad)" stroke-width="2" opacity="0.9" />
+
+  <!-- DevOps Infinity Loop in Cloud Core -->
+  <path d="M165 135 C145 115, 125 115, 125 135 C125 155, 145 155, 165 135 C185 115, 215 115, 235 135 C255 155, 275 155, 275 135 C275 115, 255 115, 235 135 C215 155, 185 155, 165 135 Z" 
+        fill="none" stroke="url(#dvo-loop)" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Docker / K8s Container Blocks -->
+  <g transform="translate(60, 195)">
+    <rect x="0" y="0" width="60" height="20" rx="4" fill="#0759C7" />
+    <text x="30" y="14" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">K8s_CLUSTER</text>
+  </g>
+
+  <g transform="translate(170, 195)">
+    <rect x="0" y="0" width="60" height="20" rx="4" fill="#00BFFF" />
+    <text x="30" y="14" fill="#030712" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">DOCKER</text>
+  </g>
+
+  <g transform="translate(280, 195)">
+    <rect x="0" y="0" width="60" height="20" rx="4" fill="#F5C451" />
+    <text x="30" y="14" fill="#030712" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">CI/CD_AWS</text>
+  </g>
+
+  <!-- Server Pulse Dots -->
+  <circle cx="150" cy="95" r="3.5" fill="#25D366" />
+  <circle cx="250" cy="95" r="3.5" fill="#00BFFF" />
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="emb-pcb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041E42" />
+      <stop offset="100%" stop-color="#07152F" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="220" rx="14" fill="#040c1d" />
+
+  <!-- PCB Board -->
+  <rect x="50" y="30" width="300" height="155" rx="10" fill="url(#emb-pcb)" stroke="#00BFFF" stroke-width="2" />
+  
+  <!-- Corner Mounting Holes -->
+  <circle cx="65" cy="45" r="5" fill="#040c1d" stroke="#F5C451" stroke-width="2" />
+  <circle cx="335" cy="45" r="5" fill="#040c1d" stroke="#F5C451" stroke-width="2" />
+  <circle cx="65" cy="170" r="5" fill="#040c1d" stroke="#F5C451" stroke-width="2" />
+  <circle cx="335" cy="170" r="5" fill="#040c1d" stroke="#F5C451" stroke-width="2" />
+
+  <!-- Main Microcontroller Chip (MCU) -->
+  <rect x="150" y="65" width="85" height="85" rx="6" fill="#030712" stroke="#00BFFF" stroke-width="2" />
+  <circle cx="160" cy="75" r="3" fill="#F5C451" />
+  <text x="192" y="110" fill="#00BFFF" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">ARM_MCU</text>
+  <text x="192" y="125" fill="#B8C7E0" font-family="monospace" font-size="8" text-anchor="middle">32-BIT IoT</text>
+
+  <!-- MCU IC Pins (Left, Right, Top, Bottom) -->
+  <g fill="#F5C451">
+    <!-- Top & Bottom -->
+    <rect x="165" y="55" width="4" height="10" /><rect x="175" y="55" width="4" height="10" />
+    <rect x="185" y="55" width="4" height="10" /><rect x="195" y="55" width="4" height="10" />
+    <rect x="205" y="55" width="4" height="10" /><rect x="215" y="55" width="4" height="10" />
+    
+    <rect x="165" y="150" width="4" height="10" /><rect x="175" y="150" width="4" height="10" />
+    <rect x="185" y="150" width="4" height="10" /><rect x="195" y="150" width="4" height="10" />
+    <rect x="205" y="150" width="4" height="10" /><rect x="215" y="150" width="4" height="10" />
+    
+    <!-- Left & Right -->
+    <rect x="140" y="80" width="10" height="4" /><rect x="140" y="92" width="10" height="4" />
+    <rect x="140" y="104" width="10" height="4" /><rect x="140" y="116" width="10" height="4" />
+    <rect x="140" y="128" width="10" height="4" />
+
+    <rect x="235" y="80" width="10" height="4" /><rect x="235" y="92" width="10" height="4" />
+    <rect x="235" y="104" width="10" height="4" /><rect x="235" y="116" width="10" height="4" />
+    <rect x="235" y="128" width="10" height="4" />
+  </g>
+
+  <!-- Circuit Trace Lines -->
+  <path d="M140 82 L90 82 L75 110" fill="none" stroke="#00BFFF" stroke-width="1.8" />
+  <path d="M140 106 L100 106 L85 135" fill="none" stroke="#25D366" stroke-width="1.5" />
+  <path d="M245 82 L290 82 L310 105" fill="none" stroke="#F5C451" stroke-width="1.8" />
+  <path d="M245 128 L285 128 L305 145" fill="none" stroke="#00BFFF" stroke-width="1.5" />
+
+  <!-- IoT RF Waves Indicator -->
+  <path d="M285 55 A 16 16 0 0 1 305 75" fill="none" stroke="#00BFFF" stroke-width="2" />
+  <path d="M290 50 A 24 24 0 0 1 315 75" fill="none" stroke="#00BFFF" stroke-width="2" stroke-dasharray="3 3" />
+</svg>

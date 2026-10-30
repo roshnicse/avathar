@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="cyberBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#0759C7" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#F5C451" />
+    </linearGradient>
+    <linearGradient id="neuralGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0759C7" />
+      <stop offset="50%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#F5C451" />
+    </linearGradient>
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Logo Mark (Icon) -->
+  <g transform="translate(15, 10)">
+    <!-- Hexagonal tech backdrop outline -->
+    <polygon points="50,4 92,27 92,73 50,96 8,73 8,27" fill="#07152F" stroke="url(#cyberBlue)" stroke-width="2.5" opacity="0.9" />
+    
+    <!-- Outer circuit orbit rings -->
+    <circle cx="50" cy="50" r="42" fill="none" stroke="#00BFFF" stroke-width="1" stroke-dasharray="8 6" opacity="0.5" />
+    
+    <!-- Stylized Futuristic 'A' with Neural Peak and Crossbar -->
+    <!-- Left Leg -->
+    <path d="M50 18 L24 78 L34 78 L50 40 Z" fill="url(#cyberBlue)" />
+    <!-- Right Leg -->
+    <path d="M50 18 L76 78 L66 78 L50 40 Z" fill="url(#goldGlow)" />
+    
+    <!-- AI Neural Bridge (crossbar) -->
+    <path d="M33 58 L67 58" stroke="url(#goldGlow)" stroke-width="4" stroke-linecap="round" filter="url(#neonGlow)" />
+    
+    <!-- Neural Node Points -->
+    <circle cx="50" cy="18" r="5" fill="#FFE082" filter="url(#neonGlow)" />
+    <circle cx="24" cy="78" r="4" fill="#00BFFF" />
+    <circle cx="76" cy="78" r="4" fill="#F5C451" />
+    <circle cx="50" cy="58" r="3.5" fill="#FFFFFF" />
+    
+    <!-- Micro Neural Branch Lines -->
+    <line x1="50" y1="18" x2="35" y2="30" stroke="#00BFFF" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="50" y1="18" x2="65" y2="30" stroke="#FFE082" stroke-width="1.5" stroke-linecap="round" />
+    <circle cx="35" cy="30" r="2.5" fill="#00BFFF" />
+    <circle cx="65" cy="30" r="2.5" fill="#F5C451" />
+  </g>
+
+  <!-- Brand Typography -->
+  <!-- AVATHAR -->
+  <text x="135" y="58" font-family="'Space Grotesk', 'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="38" font-weight="800" fill="#FFFFFF" letter-spacing="4">
+    AVATHAR
+  </text>
+  
+  <!-- AI ACADEMY badge & text -->
+  <g transform="translate(136, 70)">
+    <!-- Pill badge for 'AI' -->
+    <rect x="0" y="2" width="34" height="22" rx="4" fill="url(#cyberBlue)" />
+    <text x="17" y="18" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">AI</text>
+    
+    <!-- ACADEMY Text -->
+    <text x="44" y="18" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#F5C451" letter-spacing="5">
+      ACADEMY
+    </text>
+  </g>
+
+  <!-- Tagline: Learn • Build • Grow -->
+  <text x="136" y="106" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="12" font-weight="500" fill="#B8C7E0" letter-spacing="3">
+    LEARN <tspan fill="#00BFFF">•</tspan> BUILD <tspan fill="#F5C451">•</tspan> GROW
+  </text>
+</svg>

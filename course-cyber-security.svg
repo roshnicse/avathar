@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cs-shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#0759C7" />
+    </linearGradient>
+    <linearGradient id="cs-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#F5C451" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="14" fill="#040c1d" />
+
+  <!-- Radar Grid Circles -->
+  <g opacity="0.25">
+    <circle cx="200" cy="120" r="95" fill="none" stroke="#00BFFF" stroke-width="1" stroke-dasharray="4 4" />
+    <circle cx="200" cy="120" r="65" fill="none" stroke="#00BFFF" stroke-width="1" />
+    <circle cx="200" cy="120" r="35" fill="none" stroke="#00BFFF" stroke-width="1" />
+    <line x1="90" y1="120" x2="310" y2="120" stroke="#00BFFF" stroke-width="1" />
+    <line x1="200" y1="20" x2="200" y2="220" stroke="#00BFFF" stroke-width="1" />
+  </g>
+
+  <!-- Cyber Shield Geometry -->
+  <path d="M200 45 L270 75 V135 C270 175 200 205 200 205 C200 205 130 175 130 135 V75 Z" 
+        fill="#07152F" stroke="url(#cs-shield)" stroke-width="3" />
+  
+  <path d="M200 60 L255 85 V132 C255 163 200 188 200 188 C200 188 145 163 145 132 V85 Z" 
+        fill="rgba(7, 89, 199, 0.25)" stroke="#00BFFF" stroke-width="1.5" stroke-dasharray="6 4" />
+
+  <!-- Lock Core -->
+  <rect x="186" y="115" width="28" height="24" rx="4" fill="url(#cs-gold)" />
+  <path d="M192 115 V105 C192 100.5 195.5 97 200 97 C204.5 97 208 100.5 208 105 V115" 
+        fill="none" stroke="url(#cs-gold)" stroke-width="3" stroke-linecap="round" />
+  <circle cx="200" cy="125" r="2.5" fill="#030712" />
+  <line x1="200" y1="127" x2="200" y2="133" stroke="#030712" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Perimeter Security Nodes -->
+  <circle cx="100" cy="70" r="4" fill="#00BFFF" />
+  <line x1="100" y1="70" x2="140" y2="90" stroke="#00BFFF" stroke-width="1" stroke-dasharray="2 3" opacity="0.6" />
+  
+  <circle cx="300" cy="70" r="4" fill="#25D366" />
+  <line x1="300" y1="70" x2="260" y2="90" stroke="#25D366" stroke-width="1" stroke-dasharray="2 3" opacity="0.6" />
+
+  <circle cx="90" cy="165" r="4" fill="#F5C451" />
+  <circle cx="310" cy="165" r="4" fill="#00BFFF" />
+
+  <!-- Tech Status Pill -->
+  <rect x="155" y="215" width="90" height="18" rx="9" fill="rgba(37, 211, 102, 0.15)" stroke="#25D366" stroke-width="1" />
+  <text x="200" y="227" fill="#8CFFB8" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" text-anchor="middle">DEFENSE_ACTIVE</text>
+</svg>

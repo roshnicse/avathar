@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" role="img" aria-label="AI Neural Brain with Data Rings">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#071F4F" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0.95"/>
+    </radialGradient>
+    <radialGradient id="brainCore" cx="50%" cy="48%" r="42%">
+      <stop offset="0%" stop-color="#0759C7" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#00BFFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00BFFF"/>
+      <stop offset="100%" stop-color="#00BFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="brainClip">
+      <ellipse cx="280" cy="215" rx="145" ry="130"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="460" fill="url(#bgGlow)" rx="16"/>
+
+  <!-- Outer orbit rings (animated) -->
+  <ellipse cx="280" cy="215" rx="210" ry="58" fill="none" stroke="#00BFFF" stroke-width="0.6" stroke-opacity="0.25"
+    transform="rotate(-20 280 215)">
+    <animateTransform attributeName="transform" type="rotate" from="-20 280 215" to="340 280 215" dur="28s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <ellipse cx="280" cy="215" rx="185" ry="50" fill="none" stroke="#F5C451" stroke-width="0.5" stroke-opacity="0.2"
+    transform="rotate(35 280 215)">
+    <animateTransform attributeName="transform" type="rotate" from="35 280 215" to="395 280 215" dur="22s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <ellipse cx="280" cy="215" rx="165" ry="40" fill="none" stroke="#0759C7" stroke-width="0.6" stroke-opacity="0.3"
+    transform="rotate(-50 280 215)">
+    <animateTransform attributeName="transform" type="rotate" from="-50 280 215" to="310 280 215" dur="18s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Core brain glow -->
+  <ellipse cx="280" cy="215" rx="130" ry="115" fill="url(#brainCore)" filter="url(#glow)"/>
+
+  <!-- AI Brain Hemisphere (left) -->
+  <path d="M280 105 C235 108, 192 130, 172 165 C150 203, 148 238, 163 268 C175 293, 200 310, 225 318 C248 325, 268 322, 280 320 Z"
+    fill="none" stroke="#00BFFF" stroke-width="1.5" stroke-opacity="0.6" filter="url(#glow)"/>
+
+  <!-- Hemisphere sulci (fold lines left) -->
+  <path d="M200 140 C220 160, 235 190, 230 225 C228 245, 220 262, 215 278" fill="none" stroke="#0759C7" stroke-width="1" stroke-opacity="0.5" stroke-dasharray="4,3"/>
+  <path d="M175 180 C185 200, 188 225, 185 248" fill="none" stroke="#0759C7" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="3,4"/>
+  <path d="M220 118 C240 145, 255 175, 258 210" fill="none" stroke="#00BFFF" stroke-width="0.8" stroke-opacity="0.35" stroke-dasharray="4,3"/>
+
+  <!-- AI Brain Hemisphere (right) -->
+  <path d="M280 105 C325 108, 368 130, 388 165 C410 203, 412 238, 397 268 C385 293, 360 310, 335 318 C312 325, 292 322, 280 320 Z"
+    fill="none" stroke="#00BFFF" stroke-width="1.5" stroke-opacity="0.6" filter="url(#glow)"/>
+
+  <!-- sulci (right) -->
+  <path d="M360 140 C340 160, 325 190, 330 225 C332 245, 340 262, 345 278" fill="none" stroke="#0759C7" stroke-width="1" stroke-opacity="0.5" stroke-dasharray="4,3"/>
+  <path d="M385 180 C375 200, 372 225, 375 248" fill="none" stroke="#0759C7" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="3,4"/>
+  <path d="M340 118 C320 145, 305 175, 302 210" fill="none" stroke="#00BFFF" stroke-width="0.8" stroke-opacity="0.35" stroke-dasharray="4,3"/>
+
+  <!-- Brain stem -->
+  <path d="M258 318 C262 340, 268 356, 275 368 L285 368 C292 356, 298 340, 302 318" fill="none" stroke="#0759C7" stroke-width="1.5" stroke-opacity="0.5"/>
+
+  <!-- Centre corpus callosum -->
+  <line x1="280" y1="115" x2="280" y2="318" stroke="#00BFFF" stroke-width="0.8" stroke-opacity="0.4" stroke-dasharray="5,3"/>
+
+  <!-- Neural network nodes LAYER 1 (input) -->
+  <g filter="url(#glow)">
+    <circle cx="108" cy="148" r="5.5" fill="#00BFFF" fill-opacity="0.9"><animate attributeName="r" values="5.5;7;5.5" dur="2.8s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="0.9;0.5;0.9" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="108" cy="188" r="5" fill="#00BFFF" fill-opacity="0.7"><animate attributeName="r" values="5;7;5" dur="3.2s" repeatCount="indefinite" begin="0.4s"/></circle>
+    <circle cx="108" cy="228" r="5.5" fill="#F5C451" fill-opacity="0.85"><animate attributeName="r" values="5.5;7.5;5.5" dur="2.5s" repeatCount="indefinite" begin="0.8s"/></circle>
+    <circle cx="108" cy="268" r="5" fill="#00BFFF" fill-opacity="0.7"><animate attributeName="r" values="5;7;5" dur="3.6s" repeatCount="indefinite" begin="1.2s"/></circle>
+    <circle cx="108" cy="308" r="5" fill="#00BFFF" fill-opacity="0.6"><animate attributeName="r" values="5;6.5;5" dur="4s" repeatCount="indefinite" begin="1.6s"/></circle>
+  </g>
+
+  <!-- LAYER 2 (hidden 1) -->
+  <g filter="url(#glow)">
+    <circle cx="172" cy="130" r="6" fill="#0759C7" fill-opacity="0.9"><animate attributeName="fill-opacity" values="0.9;0.4;0.9" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="172" cy="172" r="6" fill="#00BFFF" fill-opacity="0.8"><animate attributeName="r" values="6;8;6" dur="2.9s" repeatCount="indefinite" begin="0.5s"/></circle>
+    <circle cx="172" cy="214" r="6.5" fill="#F5C451" fill-opacity="0.9"><animate attributeName="r" values="6.5;9;6.5" dur="2.6s" repeatCount="indefinite" begin="1s"/></circle>
+    <circle cx="172" cy="256" r="6" fill="#0759C7" fill-opacity="0.8"><animate attributeName="fill-opacity" values="0.8;0.3;0.8" dur="3.1s" repeatCount="indefinite" begin="1.5s"/></circle>
+    <circle cx="172" cy="298" r="6" fill="#00BFFF" fill-opacity="0.7"><animate attributeName="r" values="6;8;6" dur="3.4s" repeatCount="indefinite" begin="0.2s"/></circle>
+  </g>
+
+  <!-- LAYER 3 (hidden 2 — central) -->
+  <g filter="url(#strongGlow)">
+    <circle cx="242" cy="148" r="7.5" fill="#00BFFF"><animate attributeName="r" values="7.5;10;7.5" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="242" cy="198" r="8" fill="#F5C451"><animate attributeName="r" values="8;11;8" dur="3s" repeatCount="indefinite" begin="0.6s"/></circle>
+    <circle cx="242" cy="248" r="7.5" fill="#00BFFF"><animate attributeName="r" values="7.5;10;7.5" dur="2.7s" repeatCount="indefinite" begin="1.2s"/></circle>
+    <circle cx="242" cy="298" r="7" fill="#0759C7"><animate attributeName="fill-opacity" values="1;0.4;1" dur="2.8s" repeatCount="indefinite" begin="1.8s"/></circle>
+  </g>
+
+  <!-- LAYER 4 (hidden 3) -->
+  <g filter="url(#strongGlow)">
+    <circle cx="318" cy="148" r="7.5" fill="#00BFFF"><animate attributeName="r" values="7.5;10;7.5" dur="2.2s" repeatCount="indefinite" begin="0.3s"/></circle>
+    <circle cx="318" cy="198" r="8" fill="#F5C451"><animate attributeName="r" values="8;11;8" dur="2.9s" repeatCount="indefinite" begin="0.9s"/></circle>
+    <circle cx="318" cy="248" r="7.5" fill="#00BFFF"><animate attributeName="r" values="7.5;10;7.5" dur="3.1s" repeatCount="indefinite" begin="1.5s"/></circle>
+    <circle cx="318" cy="298" r="7" fill="#0759C7"><animate attributeName="fill-opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite" begin="0.7s"/></circle>
+  </g>
+
+  <!-- LAYER 5 (hidden 4 right) -->
+  <g filter="url(#glow)">
+    <circle cx="388" cy="130" r="6" fill="#0759C7" fill-opacity="0.9"><animate attributeName="fill-opacity" values="0.9;0.4;0.9" dur="3.3s" repeatCount="indefinite" begin="0.4s"/></circle>
+    <circle cx="388" cy="172" r="6" fill="#00BFFF" fill-opacity="0.8"><animate attributeName="r" values="6;8;6" dur="3s" repeatCount="indefinite" begin="0.8s"/></circle>
+    <circle cx="388" cy="214" r="6.5" fill="#F5C451" fill-opacity="0.9"><animate attributeName="r" values="6.5;9;6.5" dur="2.7s" repeatCount="indefinite" begin="1.3s"/></circle>
+    <circle cx="388" cy="256" r="6" fill="#0759C7" fill-opacity="0.8"><animate attributeName="fill-opacity" values="0.8;0.3;0.8" dur="3.4s" repeatCount="indefinite" begin="1.8s"/></circle>
+    <circle cx="388" cy="298" r="6" fill="#00BFFF" fill-opacity="0.7"><animate attributeName="r" values="6;8;6" dur="3.6s" repeatCount="indefinite" begin="0.1s"/></circle>
+  </g>
+
+  <!-- LAYER 6 (output) -->
+  <g filter="url(#glow)">
+    <circle cx="452" cy="168" r="5.5" fill="#00BFFF" fill-opacity="0.9"><animate attributeName="r" values="5.5;7.5;5.5" dur="2.9s" repeatCount="indefinite" begin="0.5s"/></circle>
+    <circle cx="452" cy="218" r="5" fill="#F5C451" fill-opacity="0.85"><animate attributeName="r" values="5;7;5" dur="2.4s" repeatCount="indefinite" begin="1s"/></circle>
+    <circle cx="452" cy="268" r="5.5" fill="#00BFFF" fill-opacity="0.7"><animate attributeName="r" values="5.5;7.5;5.5" dur="3.3s" repeatCount="indefinite" begin="1.5s"/></circle>
+  </g>
+
+  <!-- Connections between layers (selected) -->
+  <g stroke="#00BFFF" stroke-opacity="0.15" stroke-width="0.8" fill="none">
+    <!-- L1 → L2 sample connections -->
+    <line x1="108" y1="148" x2="172" y2="130"/><line x1="108" y1="148" x2="172" y2="172"/>
+    <line x1="108" y1="188" x2="172" y2="172"/><line x1="108" y1="188" x2="172" y2="214"/>
+    <line x1="108" y1="228" x2="172" y2="172"/><line x1="108" y1="228" x2="172" y2="214"/><line x1="108" y1="228" x2="172" y2="256"/>
+    <line x1="108" y1="268" x2="172" y2="256"/><line x1="108" y1="268" x2="172" y2="298"/>
+    <line x1="108" y1="308" x2="172" y2="298"/><line x1="108" y1="308" x2="172" y2="256"/>
+
+    <!-- L2 → L3 -->
+    <line x1="172" y1="130" x2="242" y2="148"/><line x1="172" y1="172" x2="242" y2="148"/><line x1="172" y1="172" x2="242" y2="198"/>
+    <line x1="172" y1="214" x2="242" y2="198"/><line x1="172" y1="214" x2="242" y2="248"/>
+    <line x1="172" y1="256" x2="242" y2="248"/><line x1="172" y1="256" x2="242" y2="298"/>
+    <line x1="172" y1="298" x2="242" y2="298"/><line x1="172" y1="298" x2="242" y2="248"/>
+
+    <!-- L3 → L4 -->
+    <line x1="242" y1="148" x2="318" y2="148"/><line x1="242" y1="148" x2="318" y2="198"/>
+    <line x1="242" y1="198" x2="318" y2="148"/><line x1="242" y1="198" x2="318" y2="198"/><line x1="242" y1="198" x2="318" y2="248"/>
+    <line x1="242" y1="248" x2="318" y2="198"/><line x1="242" y1="248" x2="318" y2="248"/><line x1="242" y1="248" x2="318" y2="298"/>
+    <line x1="242" y1="298" x2="318" y2="248"/><line x1="242" y1="298" x2="318" y2="298"/>
+
+    <!-- L4 → L5 -->
+    <line x1="318" y1="148" x2="388" y2="130"/><line x1="318" y1="148" x2="388" y2="172"/>
+    <line x1="318" y1="198" x2="388" y2="172"/><line x1="318" y1="198" x2="388" y2="214"/>
+    <line x1="318" y1="248" x2="388" y2="214"/><line x1="318" y1="248" x2="388" y2="256"/>
+    <line x1="318" y1="298" x2="388" y2="256"/><line x1="318" y1="298" x2="388" y2="298"/>
+
+    <!-- L5 → L6 -->
+    <line x1="388" y1="130" x2="452" y2="168"/><line x1="388" y1="172" x2="452" y2="168"/>
+    <line x1="388" y1="214" x2="452" y2="218"/><line x1="388" y1="256" x2="452" y2="218"/>
+    <line x1="388" y1="256" x2="452" y2="268"/><line x1="388" y1="298" x2="452" y2="268"/>
+  </g>
+
+  <!-- Travelling synaptic pulse dots (animated along paths) -->
+  <!-- Pulse 1 -->
+  <circle r="3.5" fill="#00BFFF" filter="url(#glow)">
+    <animateMotion path="M108,188 L242,198 L388,214 L452,218" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Pulse 2 -->
+  <circle r="3" fill="#F5C451" filter="url(#glow)">
+    <animateMotion path="M108,228 L172,214 L318,248 L388,256 L452,268" dur="3.2s" repeatCount="indefinite" begin="0.8s"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+  <!-- Pulse 3 -->
+  <circle r="3" fill="#00BFFF" filter="url(#glow)">
+    <animateMotion path="M108,268 L172,298 L242,298 L318,298 L388,298 L452,268" dur="4s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+  <!-- Pulse 4 -->
+  <circle r="2.5" fill="#A855F7" filter="url(#glow)">
+    <animateMotion path="M108,148 L172,130 L242,148 L318,148 L452,168" dur="3.6s" repeatCount="indefinite" begin="2.1s"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.6s" repeatCount="indefinite" begin="2.1s"/>
+  </circle>
+
+  <!-- Floating data particles (surrounding) -->
+  <circle cx="75" cy="100" r="2" fill="#00BFFF" fill-opacity="0.5"><animate attributeName="cy" values="100;88;100" dur="4.5s" repeatCount="indefinite"/></circle>
+  <circle cx="495" cy="340" r="2" fill="#F5C451" fill-opacity="0.5"><animate attributeName="cy" values="340;328;340" dur="5.2s" repeatCount="indefinite" begin="1s"/></circle>
+  <circle cx="60" cy="360" r="1.5" fill="#00BFFF" fill-opacity="0.4"><animate attributeName="cy" values="360;348;360" dur="3.8s" repeatCount="indefinite" begin="2s"/></circle>
+  <circle cx="510" cy="120" r="2" fill="#A855F7" fill-opacity="0.5"><animate attributeName="cy" values="120;108;120" dur="4.2s" repeatCount="indefinite" begin="0.5s"/></circle>
+  <circle cx="530" cy="230" r="1.5" fill="#00BFFF" fill-opacity="0.35"><animate attributeName="cy" values="230;218;230" dur="5s" repeatCount="indefinite" begin="1.5s"/></circle>
+
+  <!-- Labels -->
+  <text x="108" y="336" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A6080" letter-spacing="0.5">INPUT</text>
+  <text x="280" y="336" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A6080" letter-spacing="0.5">HIDDEN LAYERS</text>
+  <text x="452" y="297" text-anchor="middle" font-family="monospace" font-size="9" fill="#4A6080" letter-spacing="0.5">OUTPUT</text>
+
+  <!-- Bottom label bar -->
+  <rect x="40" y="392" width="480" height="36" rx="8" fill="rgba(7,21,47,0.85)" stroke="rgba(0,191,255,0.2)" stroke-width="1"/>
+  <text x="280" y="415" text-anchor="middle" font-family="monospace" font-size="11" fill="#00BFFF" letter-spacing="1.5">AVATHAR AI — DEEP NEURAL NETWORK VISUALISATION</text>
+</svg>

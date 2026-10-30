@@ -1,0 +1,111 @@
+/* ==========================================================================
+   AVATHAR AI ACADEMY — ANIMATIONS STYLESHEET
+   Keyframes, Transitions, Glows & Accessibility
+   ========================================================================== */
+
+/* Keyframes */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.25);
+    border-color: rgba(0, 191, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.55);
+    border-color: rgba(0, 191, 255, 0.85);
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 6px rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes mouse-scroll-anim {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 15px);
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes circuit-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(0, 191, 255, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(0, 191, 255, 0.8));
+  }
+}
+
+/* Scroll Animation Classes (triggered by IntersectionObserver) */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.animate-fade-in {
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.animate-on-scroll.animate-fade-left {
+  transform: translateX(-40px);
+}
+
+.animate-on-scroll.animate-fade-right {
+  transform: translateX(40px);
+}
+
+.animate-on-scroll.animate-scale {
+  transform: scale(0.92);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* Stagger Delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.6s; }
+
+/* Reduced Motion Mode */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

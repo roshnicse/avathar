@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="c-ai-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#7B2CBF" />
+    </linearGradient>
+    <linearGradient id="c-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#F5C451" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="14" fill="#040c1d" />
+  <!-- Circuit Grid Background -->
+  <g opacity="0.15">
+    <line x1="0" y1="40" x2="400" y2="40" stroke="#00BFFF" stroke-width="1" />
+    <line x1="0" y1="120" x2="400" y2="120" stroke="#00BFFF" stroke-width="1" />
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#00BFFF" stroke-width="1" />
+    <line x1="80" y1="0" x2="80" y2="240" stroke="#00BFFF" stroke-width="1" />
+    <line x1="200" y1="0" x2="200" y2="240" stroke="#00BFFF" stroke-width="1" />
+    <line x1="320" y1="0" x2="320" y2="240" stroke="#00BFFF" stroke-width="1" />
+  </g>
+  
+  <!-- Neural Layers: Input (3), Hidden (4), Hidden (4), Output (2) -->
+  <!-- Synaptic Connections -->
+  <g stroke="rgba(0, 191, 255, 0.4)" stroke-width="1.2">
+    <!-- L1 to L2 -->
+    <line x1="70" y1="60" x2="150" y2="45" /><line x1="70" y1="60" x2="150" y2="95" /><line x1="70" y1="60" x2="150" y2="145" />
+    <line x1="70" y1="120" x2="150" y2="45" /><line x1="70" y1="120" x2="150" y2="95" /><line x1="70" y1="120" x2="150" y2="145" /><line x1="70" y1="120" x2="150" y2="195" />
+    <line x1="70" y1="180" x2="150" y2="95" /><line x1="70" y1="180" x2="150" y2="145" /><line x1="70" y1="180" x2="150" y2="195" />
+    <!-- L2 to L3 -->
+    <line x1="150" y1="45" x2="250" y2="45" stroke="rgba(123, 44, 191, 0.4)" />
+    <line x1="150" y1="95" x2="250" y2="95" stroke="rgba(123, 44, 191, 0.5)" />
+    <line x1="150" y1="145" x2="250" y2="145" stroke="rgba(123, 44, 191, 0.5)" />
+    <line x1="150" y1="195" x2="250" y2="195" stroke="rgba(123, 44, 191, 0.4)" />
+    <line x1="150" y1="45" x2="250" y2="95" /><line x1="150" y1="95" x2="250" y2="45" />
+    <line x1="150" y1="95" x2="250" y2="145" /><line x1="150" y1="145" x2="250" y2="95" />
+    <line x1="150" y1="145" x2="250" y2="195" /><line x1="150" y1="195" x2="250" y2="145" />
+    <!-- L3 to Output -->
+    <line x1="250" y1="45" x2="330" y2="85" stroke="rgba(245, 196, 81, 0.5)" />
+    <line x1="250" y1="95" x2="330" y2="85" stroke="rgba(245, 196, 81, 0.6)" />
+    <line x1="250" y1="145" x2="330" y2="155" stroke="rgba(245, 196, 81, 0.6)" />
+    <line x1="250" y1="195" x2="330" y2="155" stroke="rgba(245, 196, 81, 0.5)" />
+  </g>
+
+  <!-- Input Nodes -->
+  <circle cx="70" cy="60" r="9" fill="#07152F" stroke="#00BFFF" stroke-width="2.5" />
+  <circle cx="70" cy="120" r="9" fill="#07152F" stroke="#00BFFF" stroke-width="2.5" />
+  <circle cx="70" cy="180" r="9" fill="#07152F" stroke="#00BFFF" stroke-width="2.5" />
+  <circle cx="70" cy="120" r="4" fill="#00BFFF" />
+
+  <!-- Hidden Layer 1 Nodes -->
+  <circle cx="150" cy="45" r="8" fill="#07152F" stroke="#0759C7" stroke-width="2" />
+  <circle cx="150" cy="95" r="8" fill="#07152F" stroke="#7B2CBF" stroke-width="2" />
+  <circle cx="150" cy="145" r="8" fill="#07152F" stroke="#7B2CBF" stroke-width="2" />
+  <circle cx="150" cy="195" r="8" fill="#07152F" stroke="#0759C7" stroke-width="2" />
+
+  <!-- Hidden Layer 2 Nodes -->
+  <circle cx="250" cy="45" r="8" fill="#07152F" stroke="#7B2CBF" stroke-width="2" />
+  <circle cx="250" cy="95" r="10" fill="#7B2CBF" stroke="#FFFFFF" stroke-width="2" />
+  <circle cx="250" cy="145" r="10" fill="#7B2CBF" stroke="#FFFFFF" stroke-width="2" />
+  <circle cx="250" cy="195" r="8" fill="#07152F" stroke="#7B2CBF" stroke-width="2" />
+
+  <!-- Output Nodes (Prediction / Generation) -->
+  <circle cx="330" cy="85" r="12" fill="url(#c-gold)" stroke="#FFFFFF" stroke-width="2" />
+  <circle cx="330" cy="155" r="12" fill="url(#c-ai-grad)" stroke="#FFFFFF" stroke-width="2" />
+  
+  <!-- AI Sparkle Icon on Output -->
+  <path d="M330 79 L332 83 L336 85 L332 87 L330 91 L328 87 L324 85 L328 83 Z" fill="#030712" />
+</svg>

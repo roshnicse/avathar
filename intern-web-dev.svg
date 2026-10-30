@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wd-screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07152F" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="wd-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#F5C451" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="220" rx="14" fill="#040c1d" />
+
+  <!-- Laptop Screen & Keyboard Base -->
+  <!-- Screen Bezel -->
+  <rect x="75" y="30" width="250" height="135" rx="8" fill="#0A1E46" stroke="#00BFFF" stroke-width="2" />
+  <!-- Display Area -->
+  <rect x="85" y="40" width="230" height="115" rx="4" fill="url(#wd-screen)" />
+
+  <!-- Left: Code Editor Pane -->
+  <rect x="85" y="40" width="110" height="115" fill="#030712" />
+  <circle cx="95" cy="48" r="2.5" fill="#FF5C5C" />
+  <circle cx="102" cy="48" r="2.5" fill="#F5C451" />
+  <circle cx="109" cy="48" r="2.5" fill="#25D366" />
+  
+  <text x="95" y="66" fill="#F5C451" font-family="monospace" font-size="8">&lt;div class=&quot;hero&quot;&gt;</text>
+  <text x="105" y="77" fill="#00BFFF" font-family="monospace" font-size="8">&lt;h1&gt;Avathar AI&lt;/h1&gt;</text>
+  <text x="105" y="88" fill="#8CFFB8" font-family="monospace" font-size="8">const ai = useAI();</text>
+  <text x="105" y="99" fill="#9D4EDD" font-family="monospace" font-size="8">return &lt;App /&gt;</text>
+  <text x="95" y="110" fill="#F5C451" font-family="monospace" font-size="8">&lt;/div&gt;</text>
+  <text x="95" y="122" fill="#25D366" font-family="monospace" font-size="7.5">&gt; Build: Success 0.2s</text>
+
+  <!-- Right: Modern Website UI Live Preview -->
+  <g transform="translate(202, 45)">
+    <!-- Mini Navbar -->
+    <rect x="0" y="0" width="105" height="12" rx="2" fill="#07152F" />
+    <circle cx="8" cy="6" r="3" fill="#00BFFF" />
+    <rect x="65" y="4" width="32" height="4" rx="2" fill="#F5C451" />
+    <!-- Hero Block -->
+    <rect x="0" y="16" width="105" height="45" rx="3" fill="rgba(7, 89, 199, 0.3)" stroke="rgba(0,191,255,0.3)" />
+    <rect x="8" y="24" width="55" height="5" rx="2" fill="#FFFFFF" />
+    <rect x="8" y="32" width="75" height="3" rx="1.5" fill="rgba(255,255,255,0.4)" />
+    <rect x="8" y="42" width="28" height="10" rx="5" fill="#00BFFF" />
+    <!-- Two Cards -->
+    <rect x="0" y="66" width="48" height="32" rx="3" fill="#07152F" stroke="rgba(0,191,255,0.2)" />
+    <rect x="54" y="66" width="48" height="32" rx="3" fill="#07152F" stroke="rgba(245,196,81,0.2)" />
+  </g>
+
+  <!-- Laptop Base & Keyboard -->
+  <path d="M45 165 L355 165 L330 180 L70 180 Z" fill="#07152F" stroke="#0759C7" stroke-width="1.5" />
+  <rect x="170" y="167" width="60" height="4" rx="2" fill="#00BFFF" opacity="0.6" />
+</svg>

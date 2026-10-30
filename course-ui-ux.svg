@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ux-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#7B2CBF" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="14" fill="#040c1d" />
+
+  <!-- Figma Frame Workspace Canvas -->
+  <!-- Main Phone Frame -->
+  <rect x="70" y="30" width="110" height="180" rx="16" fill="#07152F" stroke="#00BFFF" stroke-width="2" />
+  <!-- Screen top notch -->
+  <rect x="105" y="36" width="40" height="5" rx="2.5" fill="#030712" />
+  
+  <!-- UI Components inside Phone -->
+  <rect x="85" y="55" width="80" height="40" rx="6" fill="url(#ux-grad)" opacity="0.8" />
+  <rect x="85" y="105" width="50" height="6" rx="3" fill="#FFFFFF" />
+  <rect x="85" y="118" width="75" height="4" rx="2" fill="rgba(255,255,255,0.4)" />
+  <rect x="85" y="127" width="60" height="4" rx="2" fill="rgba(255,255,255,0.4)" />
+  
+  <!-- Primary Button on Phone -->
+  <rect x="85" y="150" width="80" height="20" rx="10" fill="#F5C451" />
+  <text x="125" y="163" fill="#030712" font-family="'Space Grotesk', sans-serif" font-size="8" font-weight="700" text-anchor="middle">SUBMIT</text>
+
+  <!-- Desktop Browser Frame (Overlapping) -->
+  <rect x="200" y="50" width="150" height="110" rx="8" fill="#030712" stroke="#7B2CBF" stroke-width="2" />
+  <rect x="200" y="50" width="150" height="18" rx="8" fill="#07152F" />
+  <circle cx="212" cy="59" r="3" fill="#FF5C5C" />
+  <circle cx="221" cy="59" r="3" fill="#F5C451" />
+  <circle cx="230" cy="59" r="3" fill="#25D366" />
+  
+  <!-- Wireframe Boxes inside Browser -->
+  <rect x="215" y="78" width="55" height="30" rx="4" fill="rgba(0,191,255,0.2)" stroke="#00BFFF" stroke-width="1" stroke-dasharray="2 2" />
+  <rect x="280" y="78" width="55" height="30" rx="4" fill="rgba(123,44,191,0.2)" stroke="#7B2CBF" stroke-width="1" stroke-dasharray="2 2" />
+  
+  <!-- Pen Tool Anchor Point Vector Line -->
+  <path d="M150 170 C220 180, 240 220, 310 190" fill="none" stroke="#F5C451" stroke-width="2.5" />
+  <rect x="228" y="185" width="8" height="8" fill="#FFFFFF" stroke="#00BFFF" stroke-width="2" />
+  <line x1="210" y1="180" x2="254" y2="198" stroke="#00BFFF" stroke-width="1" />
+  <circle cx="210" cy="180" r="3" fill="#00BFFF" />
+  <circle cx="254" cy="198" r="3" fill="#00BFFF" />
+</svg>

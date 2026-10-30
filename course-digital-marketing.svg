@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dm-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5C451" />
+      <stop offset="100%" stop-color="#FF5C5C" />
+    </linearGradient>
+    <linearGradient id="dm-line" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#25D366" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="14" fill="#040c1d" />
+
+  <!-- Marketing Bullseye & Funnel Graph -->
+  <g transform="translate(100, 115)">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="rgba(0,191,255,0.2)" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="42" fill="none" stroke="rgba(0,191,255,0.4)" stroke-width="2" />
+    <circle cx="0" cy="0" r="24" fill="none" stroke="url(#dm-grad)" stroke-width="3" />
+    <circle cx="0" cy="0" r="8" fill="#F5C451" />
+  </g>
+
+  <!-- Performance Growth Arrow -->
+  <path d="M140 170 L210 120 L270 140 L340 60" fill="none" stroke="url(#dm-line)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Arrow Head -->
+  <polygon points="340,60 326,62 334,74" fill="#25D366" />
+
+  <!-- Metric Badges -->
+  <g transform="translate(220, 45)">
+    <rect x="0" y="0" width="120" height="24" rx="12" fill="#07152F" stroke="#25D366" stroke-width="1" />
+    <text x="60" y="16" fill="#8CFFB8" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" text-anchor="middle">CONVERSION +142%</text>
+  </g>
+
+  <g transform="translate(200, 165)">
+    <rect x="0" y="0" width="150" height="42" rx="6" fill="#07152F" stroke="rgba(0,191,255,0.3)" />
+    <text x="12" y="18" fill="#00BFFF" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">SEO RANKING #1</text>
+    <text x="12" y="32" fill="#B8C7E0" font-family="'Space Grotesk', sans-serif" font-size="9">CAMPAIGNS • ADS • SMM</text>
+  </g>
+</svg>

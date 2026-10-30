@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ba-pie1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#0759C7" />
+    </linearGradient>
+    <linearGradient id="ba-pie2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#F5C451" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" rx="14" fill="#040c1d" />
+
+  <!-- Donut Chart -->
+  <g transform="translate(110, 120)">
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#7B2CBF" stroke-width="22" stroke-dasharray="140 180" />
+    <circle cx="0" cy="0" r="50" fill="none" stroke="url(#ba-pie1)" stroke-width="22" stroke-dasharray="90 230" stroke-dashoffset="-140" />
+    <circle cx="0" cy="0" r="50" fill="none" stroke="url(#ba-pie2)" stroke-width="22" stroke-dasharray="60 260" stroke-dashoffset="-230" />
+    <text x="0" y="6" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="800" text-anchor="middle">BI_KPI</text>
+  </g>
+
+  <!-- KPI Cards Right -->
+  <g transform="translate(200, 40)">
+    <!-- KPI 1 -->
+    <rect x="0" y="0" width="165" height="42" rx="6" fill="#07152F" stroke="rgba(0,191,255,0.25)" />
+    <text x="12" y="18" fill="#B8C7E0" font-family="'Space Grotesk', sans-serif" font-size="9">DECISION ACCURACY</text>
+    <text x="12" y="34" fill="#00BFFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">96.8% HIGH</text>
+
+    <!-- KPI 2 -->
+    <rect x="0" y="55" width="165" height="42" rx="6" fill="#07152F" stroke="rgba(245,196,81,0.25)" />
+    <text x="12" y="73" fill="#B8C7E0" font-family="'Space Grotesk', sans-serif" font-size="9">STRATEGIC REPORTING</text>
+    <text x="12" y="89" fill="#F5C451" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">REAL-TIME</text>
+
+    <!-- KPI 3 -->
+    <rect x="0" y="110" width="165" height="42" rx="6" fill="#07152F" stroke="rgba(123,44,191,0.25)" />
+    <text x="12" y="128" fill="#B8C7E0" font-family="'Space Grotesk', sans-serif" font-size="9">EXECUTIVE METRICS</text>
+    <text x="12" y="144" fill="#8CFFB8" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">PORTFOLIO OPT</text>
+  </g>
+</svg>
